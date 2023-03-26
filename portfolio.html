@@ -38,12 +38,12 @@
           </ul>
         </nav>
         <ul class="header-list list">
-          <li>
+          <li class="header-item">
             <a href="mailto:info@devstudio.com" class="header-mail link"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="header-item">
             <a href="tel:+110001111111" class="header-tel link"
               >+11 (000) 111-11-11</a
             >
@@ -327,6 +327,25 @@
             </li>
           </ul>
         </div>
+        <form>
+          <p class="footer-social-title">Subscribe</p>
+          <div class="footer-subscribe">
+            <label class="footer-form-label">
+              <input
+                name="email"
+                type="email"
+                class="footer-form-input"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="footer-btn-subscribe" type="submit">
+              Subscribe
+              <svg class="footer-subscribe-icon" width="24px" height="24px">
+                <use href="./image/icons.svg#subscribe"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
   </body>
