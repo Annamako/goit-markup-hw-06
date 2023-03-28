@@ -470,6 +470,7 @@ h3 {
 }
 
 .footer-social-item {
+  flex-basis: calc((100% - 48px) / 4);
 }
 
 .footer-social-link {
@@ -539,6 +540,7 @@ h3 {
   min-width: 165px;
   border-color: transparent;
   border-radius: 4px;
+  transition: background-color 50ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-btn-subscribe:hover,
@@ -692,13 +694,14 @@ h3 {
 
 .modal {
   padding: 24px;
+  padding-top: 72px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
-  min-height: 576px;
   background-color: var(--background-color);
+  border-radius: 5px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -736,7 +739,6 @@ h3 {
   text-align: center;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
-  margin-top: 48px;
 }
 
 .form {
@@ -749,6 +751,10 @@ h3 {
   position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.form-field-comment {
+  margin: 0;
 }
 
 .form-input:focus,
@@ -774,8 +780,6 @@ h3 {
 
 .form-input {
   height: 40px;
-  left: 0px;
-  top: 84px;
   border: 1px solid #2e2f42;
   border-radius: 4px;
   padding-left: 38px;
@@ -787,6 +791,7 @@ h3 {
   position: absolute;
   left: 16px;
   top: 50%;
+  transform: translateY(-10%);
 }
 
 .form-text {
@@ -817,7 +822,6 @@ h3 {
   color: #8e8f99;
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-bottom: 24px;
   margin-top: 16px;
 }
@@ -843,6 +847,12 @@ h3 {
   background-position: center;
 }
 
+.form-label-check-link {
+  color: #4d5ae5;
+  display: inline-block;
+  margin-left: 4px;
+}
+
 .form-btn {
   font-family: inherit;
   font-weight: 500;
@@ -861,4 +871,9 @@ h3 {
   border-color: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  background-color: var(--accent-color);
 }
