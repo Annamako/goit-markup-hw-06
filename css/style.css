@@ -421,7 +421,6 @@ h3 {
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
 }
 
 .footer-logo {
@@ -452,6 +451,8 @@ h3 {
 }
 
 .footer-social {
+  margin-left: 120px;
+  margin-right: 80px;
 }
 
 .footer-social-title {
@@ -509,7 +510,7 @@ h3 {
 
 .footer-form-input {
   width: 232px;
-  height: 24px;
+  height: 40px;
   padding: 8px 16px;
   border: 1px solid #ffffff;
   border-radius: 4px;
@@ -523,7 +524,6 @@ h3 {
 }
 
 .footer-btn-subscribe {
-  height: 40px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -653,7 +653,7 @@ h3 {
 }
 
 .portfolio-card {
-  padding: 16px 32px;
+  padding: 32px 16px;
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
