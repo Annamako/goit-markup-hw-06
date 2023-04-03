@@ -6,6 +6,12 @@
   --light-color: #f4f4fd;
 }
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--text-color);
@@ -19,11 +25,6 @@ body {
 
 .link {
   text-decoration: none;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--head-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -103,6 +104,11 @@ h3 {
 }
 
 .header-link {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .header-link:not(:last-child) {
@@ -136,11 +142,6 @@ h3 {
 }
 
 .header-list {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   display: flex;
   gap: 40px;
   margin-left: auto;
@@ -152,10 +153,20 @@ h3 {
 
 .header-mail {
   color: var(--text-color);
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .header-tel {
   color: var(--text-color);
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* HERO */
@@ -369,6 +380,9 @@ h3 {
 
 .customers-container {
   width: 1128px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .customers-title {
@@ -427,11 +441,10 @@ h3 {
   font-family: "Raleway";
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16;
-  display: flex;
-  align-items: center;
+  line-height: 1.33;
   letter-spacing: 0.03em;
-  padding-bottom: 16px;
+  text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .footer-logo-first {
@@ -448,6 +461,7 @@ h3 {
   letter-spacing: 0.02em;
   color: var(--light-color);
   max-width: 264px;
+  margin-top: 16px;
 }
 
 .footer-social {
@@ -496,7 +510,6 @@ h3 {
 
 .footer-subscribe {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-top: 16px;
 }
@@ -710,7 +723,6 @@ h3 {
 }
 
 .modal-btn {
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -724,6 +736,8 @@ h3 {
   cursor: pointer;
   background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 50ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover,
