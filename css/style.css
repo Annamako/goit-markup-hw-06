@@ -372,15 +372,12 @@ h3 {
 /* CUSTOMERS */
 
 .customers {
-  margin: 120px 156px;
-  width: 1158px;
+  padding: 120px 156px;
 }
 
 .customers-container {
-  width: 1128px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .customers-title {
